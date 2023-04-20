@@ -1,3 +1,7 @@
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_TVOS
+#elif TARGET_OS_IOS
+
 #import <Foundation/Foundation.h>
 
 typedef enum {
@@ -44,3 +48,5 @@ extern NSString * const kInternetApplicationScheme;
 extern NSString * const kExchangeURLSchemeSuffix;
 
 #define isExternalApplication(sourceApplication) [@[kPanelenApp, kInternetApp] containsObject:sourceApplication]
+
+#endif

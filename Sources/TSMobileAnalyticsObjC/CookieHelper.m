@@ -6,6 +6,10 @@
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
 
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_TVOS
+#elif TARGET_OS_IOS
+
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
 #import "CookieHelper.h"
@@ -99,3 +103,5 @@
 }
 
 @end
+
+#endif

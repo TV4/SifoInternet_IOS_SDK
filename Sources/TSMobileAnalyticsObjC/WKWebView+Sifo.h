@@ -5,6 +5,9 @@
 //  Created by Christer Ulfsparre on 2020-10-09.
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_TVOS
+#elif TARGET_OS_IOS
 
 #ifndef WKWebView_Sifo_h
 #define WKWebView_Sifo_h
@@ -19,3 +22,4 @@
 @end
 
 #endif /* WKWebView_Sifo_h */
+#endif

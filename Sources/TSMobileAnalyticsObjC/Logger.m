@@ -6,6 +6,10 @@
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
 
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_TVOS
+#elif TARGET_OS_IOS
+
 #import "Logger.h"
 
 static BOOL errors = true;
@@ -64,3 +68,5 @@ static BOOL info = false;
 }
 
 @end
+
+#endif

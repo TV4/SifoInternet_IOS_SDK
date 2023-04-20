@@ -5,6 +5,9 @@
 //  Created by Andrew Bulhak on 2020-03-27.
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_TVOS
+#elif TARGET_OS_IOS
 
 #ifndef NSArray_functional_h
 #define NSArray_functional_h
@@ -15,3 +18,5 @@
 NSArray *filterArray(NSArray *input, BOOL (^predicate)(id item));
 
 #endif /* NSArray_functional_h */
+
+#endif

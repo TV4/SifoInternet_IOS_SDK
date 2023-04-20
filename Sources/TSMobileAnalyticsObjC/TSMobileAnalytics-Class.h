@@ -1,3 +1,6 @@
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_TVOS
+#elif TARGET_OS_IOS
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
@@ -75,3 +78,5 @@ enableSystemIdentifierTracking:(BOOL)enableSystemIdentifierTracking
 + (void)removeWebview:(nonnull WKWebView *)webview;
 
 @end
+
+#endif

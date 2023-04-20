@@ -5,6 +5,9 @@
 //  Created by Christer Ulfsparre on 2020-10-13.
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_TVOS
+#elif TARGET_OS_IOS
 
 #ifndef SDKIntegrationValidator_h
 #define SDKIntegrationValidator_h
@@ -20,3 +23,5 @@
 @end
 
 #endif /* SDKIntegrationValidator_h */
+
+#endif
