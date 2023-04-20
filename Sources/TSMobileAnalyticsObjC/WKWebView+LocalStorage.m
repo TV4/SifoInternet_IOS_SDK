@@ -5,6 +5,8 @@
 //  Created by Christer Ulfsparre on 2020-10-08.
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_IOS
 
 #import "WKWebView+LocalStorage.h"
 
@@ -70,3 +72,5 @@
 }
 
 @end
+
+#endif

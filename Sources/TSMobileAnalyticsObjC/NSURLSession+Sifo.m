@@ -5,6 +5,8 @@
 //  Created by Christer Ulfsparre on 2020-10-27.
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_IOS
 
 #import "NSURLSession+Sifo.h"
 #import "NSArray+functional.h"
@@ -309,3 +311,5 @@
 }
 
 @end
+
+#endif

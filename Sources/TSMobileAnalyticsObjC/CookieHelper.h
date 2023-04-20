@@ -6,6 +6,8 @@
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
 
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_IOS
 #ifndef CookieHelper_h
 #define CookieHelper_h
 
@@ -27,3 +29,4 @@
 @end
 
 #endif /* CookieHelper_h */
+#endif

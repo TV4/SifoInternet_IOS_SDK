@@ -1,3 +1,5 @@
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_IOS
 #import "TSMobileAnalyticsConstants.h"
 
 int const cpidMaxLengthCodigo = 32;
@@ -32,3 +34,5 @@ NSString * const kServiceName = @"tnssifo-mobile-tagging";
 NSString * const kInternetApplicationScheme = @"se.tns-sifo.internetpanelen";
 
 NSString * const kExchangeURLSchemeSuffix = @".tsmobileanalytics";
+
+#endif

@@ -6,6 +6,9 @@
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
 
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_IOS
+
 #import "NSBundle+Sifo.h"
 #import "NSBundle+InfoPlist.h"
 #import "TSMobileAnalyticsConstants.h"
@@ -34,3 +37,5 @@
 }
 
 @end
+
+#endif

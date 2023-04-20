@@ -47,6 +47,9 @@
   
 */ 
 
+#include <TargetConditionals.h>
+#ifdef TARGET_OS_IOS
+
 #define PASSWORD_USES_DATA
 
 #import "KeychainItemWrapper.h"
@@ -338,3 +341,5 @@ Keychain API expects as a validly constructed container class.
 }
 
 @end
+
+#endif
