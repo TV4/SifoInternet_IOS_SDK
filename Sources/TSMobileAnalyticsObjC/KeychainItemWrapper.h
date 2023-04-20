@@ -47,6 +47,9 @@
  
 */
 
+#ifdef TARGET_OS_IOS
+
+
 #import <UIKit/UIKit.h>
 
 /*
@@ -65,3 +68,5 @@
 - (void)resetKeychainItem;
 
 @end
+
+#endif

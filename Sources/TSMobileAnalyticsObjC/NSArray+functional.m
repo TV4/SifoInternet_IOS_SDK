@@ -6,6 +6,7 @@
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
 
+#ifdef TARGET_OS_IOS
 
 #import "NSArray+functional.h"
 
@@ -18,3 +19,5 @@ NSArray *filterArray(NSArray *input, BOOL (^predicate)(id item)) {
     }
     return result;
 }
+
+#endif

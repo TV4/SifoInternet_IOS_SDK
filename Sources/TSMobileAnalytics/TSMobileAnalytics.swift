@@ -5,6 +5,8 @@
 //  Created by Karl Söderberg on 2021-10-15.
 //
 
+ #if os(iOS)
+
 import Foundation
 import TSMobileAnalyticsObjC
 import WebKit
@@ -155,3 +157,4 @@ open class TSMobileAnalytics : NSObject {
 }
 
 
+#endif

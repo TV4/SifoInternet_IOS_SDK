@@ -1,3 +1,5 @@
+#ifdef TARGET_OS_IOS
+
 #import <AdSupport/AdSupport.h>
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
@@ -728,3 +730,5 @@ keychainAccessGroup:(NSString *)accessGroup
 }
 
 @end
+
+#endif

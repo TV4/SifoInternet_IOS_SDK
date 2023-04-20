@@ -5,6 +5,7 @@
 //  Created by Christer Ulfsparre on 2020-10-27.
 //  Copyright © 2020 Dynamo. All rights reserved.
 //
+#ifdef TARGET_OS_IOS
 
 #import <Foundation/Foundation.h>
 
@@ -18,3 +19,5 @@
 @end
 
 #endif /* NSString_Encoding_h */
+
+#endif
